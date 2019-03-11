@@ -8,3 +8,23 @@ For many reasons,my enterprise applications maybe devedeveloped by php, java, et
 
 It is only necessary to submit the parameter data according to the interface parameters corresponding to different statistical models, and the various results of the statsmodels model can be returned by json.The statemodels results in json can be obtained by submitting parameters according to the interface parameters of the statesmodels.
 
+# Dependency(My development environment)
+## python 3.6(using conda install)
+
+Flask                    0.12.2
+mod-wsgi                 4.5.24+ap24vc14
+numpy                    1.13.1
+pandas                   0.20.3
+scipy                    1.1.0
+statsmodels              0.8.0
+
+
+# Installation
+
+# using
+
+>>python manage.py
+
+or
+
+uwsgi --ini uwsgi.ini
