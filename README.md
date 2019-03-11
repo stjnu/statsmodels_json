@@ -12,34 +12,34 @@ It is only necessary to submit the parameter data according to the interface par
 ## CentOS7.5
 ## python 3.6(using conda install)
 
-Flask                    0.12.2
-mod-wsgi                 4.5.24+ap24vc14
-numpy                    1.13.1
-pandas                   0.20.3
-scipy                    1.1.0
-statsmodels              0.8.0
+Flask                    0.12.2  
+mod-wsgi                 4.5.24+ap24vc14  
+numpy                    1.13.1  
+pandas                   0.20.3  
+scipy                    1.1.0  
+statsmodels              0.8.0  
 
 
 # Installation
 ## Create python environment and entrance
-$ virtualenv py36 --python=python3
-$ source py36/bin/activate
+$ virtualenv py36 --python=python3  
+$ source py36/bin/activate  
 
 ## Install packages
 
 pip install flask numpy pandas statsmodels scipy uwsgi
 
 ## Modify files for the correct path and ip address
-uwsgi.ini
-wsgi.py
+uwsgi.ini  
+wsgi.py  
 
 
 # Using
-In you environment(python3.6)
+In you environment(python3.6)  
 
-In devedeveloped environment
-$ python manage.py
+In devedeveloped environment  
+$ python manage.py  
 
-or in product environment
+or in product environment  
 
-$ uwsgi --ini uwsgi.ini
+$ uwsgi --ini uwsgi.ini  
