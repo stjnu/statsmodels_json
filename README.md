@@ -21,10 +21,11 @@ statsmodels              0.8.0
 
 # Installation
 
-# using
+# Using
+In you environment(python3.6)
 
->>python manage.py
+$ python manage.py
 
 or
 
-uwsgi --ini uwsgi.ini
+$ uwsgi --ini uwsgi.ini
