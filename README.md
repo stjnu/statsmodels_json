@@ -58,3 +58,8 @@ $ python manage.py
 or in product environment  
 
 $ uwsgi --ini uwsgi.ini  
+
+### demo
+try to open http://192.168.56.102:5000/apis_test
+
+
