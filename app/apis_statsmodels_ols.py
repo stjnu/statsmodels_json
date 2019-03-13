@@ -6,7 +6,7 @@ from flask import request,render_template,Response,make_response
 import json
 apis_statsmodels_ols = Blueprint('apis_statsmodels_ols', __name__)
 
-@apis_statsmodels_ols.route("/apis_statsmodels_ols")
+@apis_statsmodels_ols.route("/")
 
 
 
@@ -23,8 +23,7 @@ def fn_apis_statsmodels_ols():
 	model = sm.OLS(y1, x1)
 	rs = model.fit()
 
-	#对象初始化
-	c =rs_ols(
+	c =obj_rs(
 	    rs.HC0_se.tolist(),
 	    rs.HC1_se.tolist(),
 	    rs.HC2_se.tolist(),
@@ -75,7 +74,7 @@ def fn_apis_statsmodels_ols():
 	    
 	     
 	     )
-	#对象序列化
+	
 	c= c.__dict__
 
 
@@ -83,7 +82,7 @@ def fn_apis_statsmodels_ols():
 	return Response(tmp, mimetype='application/json',headers={"Access-Control-Allow-Origin":"http://127.0.0.0:5000","Access-Control-Allow-Methods":"GET","Access-Control-Allow-Headers":"x-requested-with,content-type","Access-Control-Allow-Credentials":"true"})
 	#return tmp
 
-class rs_ols:
+class obj_rs:
     HC0_se = list
     HC1_se = list
     HC2_se = list

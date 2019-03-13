@@ -24,8 +24,7 @@ def fn_apis_statsmodels_glm():
 	rs = model.fit()
 
         
-	#对象初始化
-	c =rs_ols(
+	c =obj_rs(
 		rs.aic,
 		rs.bic,
 		rs.deviance,
@@ -65,7 +64,7 @@ def fn_apis_statsmodels_glm():
 
 		 
 		 )
-	#对象序列化
+	
 	c= c.__dict__
 
 
@@ -73,8 +72,7 @@ def fn_apis_statsmodels_glm():
 	return Response(tmp, mimetype='application/json',headers={"Access-Control-Allow-Origin":"http://127.0.0.0:5000","Access-Control-Allow-Methods":"GET","Access-Control-Allow-Headers":"x-requested-with,content-type","Access-Control-Allow-Credentials":"true"})
 	#return tmp
 
-#定义对象
-class rs_ols:
+class obj_rs:
     aic = float
     bic = float
     deviance = float
