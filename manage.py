@@ -10,6 +10,7 @@ from app.apis_statsmodels_ols import apis_statsmodels_ols
 from app.apis_statsmodels_wls import apis_statsmodels_wls
 from app.apis_statsmodels_glsar import apis_statsmodels_glsar
 from app.apis_statsmodels_rlm import apis_statsmodels_rlm
+from app.apis_statsmodels_ar import apis_statsmodels_ar
 
 
 from app.apis_statsmodels_ols_test import apis_statsmodels_ols_test
@@ -26,6 +27,7 @@ app.register_blueprint(apis_statsmodels_glm,url_prefix='/apis_statsmodels_glm')
 app.register_blueprint(apis_statsmodels_wls,url_prefix='/apis_statsmodels_wls')
 app.register_blueprint(apis_statsmodels_glsar,url_prefix='/apis_statsmodels_glsar')
 app.register_blueprint(apis_statsmodels_rlm,url_prefix='/apis_statsmodels_rlm')
+app.register_blueprint(apis_statsmodels_ar,url_prefix='/apis_statsmodels_ar')
 
 
 app.register_blueprint(apis_statsmodels_ols_test,url_prefix='/apis_statsmodels_ols_test')
